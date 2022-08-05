@@ -56,6 +56,10 @@ class SmartForm extends Form{
 		return "message => $this->message";
 	}
 
+	public function setMessage($message){
+		$this->message = $message;
+	}
+
 }
 
 ?>

@@ -61,4 +61,10 @@ echo $form->TextArea(['placeholder'=>'123', 'value'=>'!!!']);
 
 
 
+$forms=new Form();
+echo $forms->open(['action'=>'', 'method'=>'GET']);
+echo $forms->input(['type'=>'text', 'placeholder'=>'Ваше имя', 'name'=>'name']);
+echo $form->close();
+
+
 ?>

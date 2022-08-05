@@ -34,18 +34,6 @@ class Form{
 	}
 }
 
-class SmartForm extends Form{
-	public function TextArea($attr) {
-	$this->str='';
-	foreach ($attr as $k=>$v){
-	$this->str=$this->str.' '.$k.'='.'"'.$v.'"'.' ';
-	if ($k='name' and isset($_REQUEST[$v])){
-	$this->str=$this->str.'value='.$_REQUEST[$v].' ';
-	}
-	}
-	return $this->str;
-	}
-	}
 
 $form=new Form();
 echo $form->open(['action'=>'', 'method'=>'GET']);
@@ -61,10 +49,13 @@ echo $form->TextArea(['placeholder'=>'123', 'value'=>'!!!']);
 
 
 
-$forms=new Form();
-echo $forms->open(['action'=>'', 'method'=>'GET']);
-echo $forms->input(['type'=>'text', 'placeholder'=>'Ваше имя', 'name'=>'name']);
-echo $form->close();
+class SmartForm extends Form{
+	private $message;
 
+	public function getMessage(){
+		return "message => $this->message";
+	}
+
+}
 
 ?>

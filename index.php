@@ -57,6 +57,7 @@ echo $form->submit(['value'=>'Отправить']);
 echo $form->close();
 echo $form->TextArea(['placeholder'=>'123', 'value'=>'!!!']);  
 echo $form->TextArea(['placeholder'=>'123', 'value'=>'!!!']);  
+echo $form->TextArea(['placeholder'=>'123', 'value'=>'!!!']);  
 
 
 

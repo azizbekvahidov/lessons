@@ -56,6 +56,15 @@ class SmartForm extends Form{
 		return "message => $this->message";
 	}
 
+	public function setMessage($message){
+		if(str_contains($message,"message =>")){
+			$this->message = $message;
+		}
+		else {
+			return "error";
+		}
+	}
+
 }
 
 ?>

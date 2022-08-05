@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaSctipt Calculator | Web Dev Trick</title>
+ <link rel="stylesheet" href="./css/style.css">
+</head>
+ 
+<body>
+  <div class="container">
+    <form name="form">
+      <div class="display">
+        <input type="text" placeholder="0" name="displayResult" disabled id="result"/>
+      </div>
+      <div class="buttons">
+        <div class="row"В машине модификации текст>
+          <input type="button" name="clear" value="C" id="clear">
+          <input type="button" name="backspace" value="<-" id="backspace">
+        </div>
+
+        <div class="row">
+          <input type="button" name="b7" value="7" class="number">
+          <input type="button" name="b8" value="8" class="number">
+          <input type="button" name="b9" value="9" class="number">
+          <input type="button" name="addb" value="+" class="operator">
+        </div>
+
+        <div class="row">
+          <input type="button" name="b4" value="4"  class="number">
+          <input type="button" name="b5" value="5" class="number">
+          <input type="button" name="b6" value="6" class="number">
+          <input type="button" name="subb" value="-" class="operator">
+        </div>
+
+        <div class="row">
+          <input type="button" name="b1" value="1" class="number">
+          <input type="button" name="b2" value="2" class="number">
+          <input type="button" name="b3" value="3" class="number">
+          <input type="button" name="mulb" value="*" class="operator">
+        </div>
+
+        <div class="row">
+          <input type="button" name="b0" value="0" class="number">
+          <input type="button" id="dot" name="potb" value="." class="">
+          <input type="button" name="divb" value="/" class="operator">
+          <input type="button" class="red" value="=" id="equal">
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+<script src="./js/script.js"></script>
+ 
+</html>
